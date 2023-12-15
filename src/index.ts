@@ -2,7 +2,7 @@ import express, { Express, Request, Response } from "express";
 import "dotenv/config";
 import dbConnect from "./config/mongo";
 import cors from "cors";
-// import router from "./routes";
+import router from "./routes";
 import swaggerUI from "swagger-ui-express";
 import openApiConfiguration from "./docs/swagger";
 
@@ -28,8 +28,8 @@ app.use(
   swaggerUI.setup(openApiConfiguration)
 );
 
-// // routes
-// app.use("/api", router);
+// routes
+app.use("/api", router);
 
 dbConnect()
   .then(() => {
