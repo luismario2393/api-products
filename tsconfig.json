@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "./public",
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "declaration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+
+    "target": "es2016"
+  },
+  "include": ["./src/*"]
+}
