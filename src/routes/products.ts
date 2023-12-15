@@ -5,7 +5,7 @@ import {
   deleteItem,
 } from "../controllers/products";
 
-let router = express.Router();
+const router = express.Router();
 
 /**
  * @openapi
